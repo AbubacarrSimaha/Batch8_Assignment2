@@ -6,7 +6,7 @@ import shapeless.ops.coproduct.FlatMap
 object Queries {
 
   def getCountryWithCode(seq: Seq[Person]): List[CountryCodeMap] = {
-    seq.map(x=> CountryCodeMap(x.country,x.country_code)).filter(x=>x.country!=null && x.country_code!=null).distinct.toList
+    seq.map(x=>CountryCodeMap(x.country,x.country_code)).filter(x=>x.country!=null && x.country_code!=null).distinct.toList
   }
 
  def flattenList(input: List[Any]): List[Any] = input.flatMap{
@@ -20,11 +20,10 @@ object Queries {
 
   def getTop5CreditLimit(input: List[Person]): List[Person] = {
     //val zx= input.map(x => Person(x.gender,x.is_active,x.last_name, x.first_name).filter(x=>x.gender=="male" && x.is_active==true ).toList
-     print(input)
-     val filteredList=input.filter(_.gender=="male").sortBy(_.credit_limit).reverse.take(5).sortBy(x =>(x.last_name, x.first_name))
-    print(filteredList)
 
-       filteredList
+     input.filter(x =>x.gender=="Male" && x.is_active).sortBy(_.credit_limit).reverse.take(5).sortBy(x =>(x.last_name, x.first_name))
+
+
   }
 
  def addMemberShipColumn(input: List[Person]): List[PersonWithMemberShip] = {

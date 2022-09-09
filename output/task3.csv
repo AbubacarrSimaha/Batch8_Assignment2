@@ -1,1 +1,6 @@
 id,first_name,last_name,email,gender,ip_address,credit_card,credit_limit,is_active,sector,country,country_code
+396,Nye,Dregan,ndreganaz@devhub.com,Male,207.23.102.183,mastercard,99417,true,Consumer Services,Netherlands,NL
+738,Sarge,Foux,sfouxkh@mac.com,Male,8.83.8.49,mastercard,98453,true,Consumer Services,China,CN
+834,Claudian,Kehir,ckehirn5@photobucket.com,Male,120.47.12.37,jcb,98728,true,Consumer Services,South Africa,ZA
+6,Heywood,Sneesby,hsneesby5@ebay.co.uk,Male,181.114.241.167,diners-club-carte-blanche,97908,true,Finance,Slovenia,SI
+614,Ellsworth,Venediktov,evenediktovh1@aboutads.info,Male,100.251.28.71,visa-electron,97478,true,Health Care,Brazil,BR

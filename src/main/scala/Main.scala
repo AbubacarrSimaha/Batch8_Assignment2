@@ -28,7 +28,7 @@ object Main {
     Output of this task to be written to output/task2.txt
      */
     //Write Example:
-
+/*
     val Input:List[Any]=List(2,List(3,5,null,7), List(null), Nil, 10,20)
     val res:List[Any] = flattenList(Input)
     print(res)
@@ -41,6 +41,8 @@ object Main {
       bw.write(line.toString + " ,")
     }
     bw.close()
+    ***/
+
     /*
     PS: Do not encapsulate the write in flattenList method,
     it should be done after your call the method as mentioned in Write Example above.
@@ -60,7 +62,9 @@ object Main {
     it should be done after your call the method as mentioned in Write Example above.
      */
     val resTask3=getTop5CreditLimit(listPerson)
-       writeCSV(resTask3,"output/task3.csv")
+    writeCSV(resTask3,"output/task3.csv")
+    println(resTask3)
+
     /*
     TODO Task4: Implement a method to add a additional column named "membership" to the existing data
       based on the below conditions.
